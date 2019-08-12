@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on My Blog Site</title>
+    <link>https://example.github.io/categories/r/</link>
+    <description>Recent content in R on My Blog Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019. First Last</copyright>
+    <lastBuildDate>Fri, 28 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Box Plot</title>
+      <link>https://example.github.io/notes/boxplot/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/notes/boxplot/</guid>
+      <description> matrix mat &amp;lt;- cbind(Uni05 = (1:100)/21, Norm = rnorm(100), `5T` = rt(100, df = 5), Gam2 = rgamma(100, shape = 2)) boxplot(mat) # directly, calling boxplot.matrix()  data.frame df. &amp;lt;- as.data.frame(mat) par(las = 1) # all axis labels horizontal boxplot(df., main = &amp;quot;boxplot(*, horizontal = TRUE)&amp;quot;, horizontal = TRUE)  formula boxplot(wt ~ cyl, mtcars)  </description>
+    </item>
+    
+  </channel>
+</rss>

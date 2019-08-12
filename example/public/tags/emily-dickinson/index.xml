@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emily Dickinson on My Blog Site</title>
+    <link>https://example.github.io/tags/emily-dickinson/</link>
+    <description>Recent content in Emily Dickinson on My Blog Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019. First Last</copyright>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.github.io/tags/emily-dickinson/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Clock stopped</title>
+      <link>https://example.github.io/poems/a_clock_stopped/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/poems/a_clock_stopped/</guid>
+      <description>A Clock stopped —
+Not the Mantel&amp;rsquo;s —
+Geneva&amp;rsquo;s farthest skill
+Can&amp;rsquo;t put the puppet bowing —
+That just now dangled still —\
+An awe came on the Trinket!
+The Figures hunched, with pain —
+Then quivered out of Decimals —
+Into Degreeless Noon —
+It will not stir for Doctors —
+This Pendulum of snow —
+The Shopman importunes it —
+While cool — concernless No —
+Nods from the Gilded pointers —</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m Nobody! Who are you?</title>
+      <link>https://example.github.io/poems/im_nobody/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/poems/im_nobody/</guid>
+      <description>I&amp;rsquo;m nobody! Who are you?
+Are you nobody, too?
+Then there&amp;rsquo;s a pair of us — don&amp;rsquo;t tell!
+They&amp;rsquo;d banish us, you know.
+How dreary to be somebody!
+How public, like a frog
+To tell your name the livelong day
+To an admiring bog!</description>
+    </item>
+    
+    <item>
+      <title>Because I could not stop for death</title>
+      <link>https://example.github.io/poems/because_i_could_not/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/poems/because_i_could_not/</guid>
+      <description>Because I could not stop for Death,
+He kindly stopped for me;
+The carriage held but just ourselves
+And Immortality.
+We slowly drove, he knew no haste,
+And I had put away
+My labor, and my leisure too,
+For his civility.
+We passed the school, where children strove
+At recess, in the ring;
+We passed the fields of gazing grain,
+We passed the setting sun.
+Or rather, he passed us;</description>
+    </item>
+    
+  </channel>
+</rss>

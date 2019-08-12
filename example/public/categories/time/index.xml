@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time on My Blog Site</title>
+    <link>https://example.github.io/categories/time/</link>
+    <description>Recent content in Time on My Blog Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019. First Last</copyright>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.github.io/categories/time/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Clock stopped</title>
+      <link>https://example.github.io/poems/a_clock_stopped/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/poems/a_clock_stopped/</guid>
+      <description>A Clock stopped —
+Not the Mantel&amp;rsquo;s —
+Geneva&amp;rsquo;s farthest skill
+Can&amp;rsquo;t put the puppet bowing —
+That just now dangled still —\
+An awe came on the Trinket!
+The Figures hunched, with pain —
+Then quivered out of Decimals —
+Into Degreeless Noon —
+It will not stir for Doctors —
+This Pendulum of snow —
+The Shopman importunes it —
+While cool — concernless No —
+Nods from the Gilded pointers —</description>
+    </item>
+    
+  </channel>
+</rss>

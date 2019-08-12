@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Death on My Blog Site</title>
+    <link>https://example.github.io/categories/death/</link>
+    <description>Recent content in Death on My Blog Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019. First Last</copyright>
+    <lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.github.io/categories/death/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Because I could not stop for death</title>
+      <link>https://example.github.io/poems/because_i_could_not/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.github.io/poems/because_i_could_not/</guid>
+      <description>Because I could not stop for Death,
+He kindly stopped for me;
+The carriage held but just ourselves
+And Immortality.
+We slowly drove, he knew no haste,
+And I had put away
+My labor, and my leisure too,
+For his civility.
+We passed the school, where children strove
+At recess, in the ring;
+We passed the fields of gazing grain,
+We passed the setting sun.
+Or rather, he passed us;</description>
+    </item>
+    
+  </channel>
+</rss>
