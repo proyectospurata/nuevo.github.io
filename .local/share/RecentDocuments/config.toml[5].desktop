@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=text-plain
+Name=config.toml
+Type=Link
+URL[$e]=file:$HOME/example/config.toml
+X-KDE-LastOpenedWith=org.kde.kate

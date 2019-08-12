@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Freshchat Web Push Notification</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="application/json" rel="manifest" href="/manifest.json">
+      <style type="text/css">
+         body{
+         background: #7C8A9C;
+         margin: 0;
+         font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+         color: #413F3F;
+         font-size: 14px;
+         -webkit-font-smoothing: antialiased;
+         text-rendering: optimizeLegibility;
+         }
+         #footer {
+         bottom: 0px;
+         text-align: center;
+         width: 100%;
+         background: #E6EFF7;
+         font-size: 14px;
+         display: inline-block;
+         border-radius: 0 0 10px 10px;
+         padding: 20px 0;
+         }
+         #footer .text p{
+         margin: 0;
+         font-size: 16px;
+         padding: 10px 30px;
+         }
+  	     #bottom{
+		 position: absolute;
+    	 width: 100%;
+   		 top: 100%;
+	     text-align: center;
+		  }
+         #bottom p {    font-size: 11px;
+         padding: 10px 0 10px;
+         color: #E6EFF7;
+         margin: 0}
+         #bottom p .red {color: #FFF; text-decoration: none}
+         #main {
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         vertical-align: middle;
+         }
+         #main .middle {
+         background: #FFF;
+         min-width: 300px;
+         max-width: 400px;
+         width: 90%;
+         position: absolute;
+         border-radius: 10px;
+         top: 50%;
+         transform: translateX(-50%) translateY(-50%);
+         left: 50%;
+         box-shadow: 0 0 20px rgba(0,0,0,0.3);
+         }
+         #main .middle .inner {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         padding:  30px 15px;
+         }
+		  #main .middle .inner p{
+			  margin: 0;
+			  padding: 0;
+		  }
+         #main .middle .inner p img {
+         height: 60px;
+         /*      display: none;*/
+         }
+      </style>
+   </head>
+   <body>
+      <div id="main">
+         <div class="middle">
+            <div class="inner">
+               <p><img src="fc_logo.png"/></p>
+            </div>
+            <div id="footer">
+               <div class="text">
+                  <p>Click on â€œ<strong>Allow</strong>â€œ to enable chat notifications</p>
+                  <p>Do not miss any conversations.</p>
+               </div>
+            </div>
+            <div id="bottom">
+                  <p>Powered by <a href="https://www.freshchat.com" target="_blank" class="red">Freshchat</a></p>
+               </div>
+         </div>
+      </div>
+      <script>
+         (function() {
+           // Private Variables
+           var referrer = undefined,
+               action = undefined,
+               appLogoPath = undefined,
+               serviceWorkerUrl = '/firebase-sw.js',
+               widget_location = '';
+
+           // Private Methods
+           var getQueryString = function( field, url ) {
+                 var href = url ? url : window.location.href;
+                 var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+                 var string = reg.exec(href);
+                 return string ? string[1] : undefined;
+               },
+               initParams = function() {
+                 var refString = getQueryString('ref'),
+                     actionString = getQueryString('action'),
+                     appLogoPathString = getQueryString('appLogoPath');
+                 referrer = refString ? atob(refString) : '';
+                 action = actionString ? atob(actionString) : '';
+                 appLogoPath = appLogoPathString ? atob(appLogoPathString) : '';
+               },
+               updateUI = function() {
+                 if(appLogoPath) {
+                   var imgElement = document.querySelector("#main .middle .inner p img");
+                   if (imgElement) {
+                     imgElement.src = appLogoPath;
+                     imgElement.style["display"] = "inline-block";
+                   }
+                 }
+               },
+               onMessage = function(event) {
+                 // For Chrome, the origin property is in the event.originalEvent object.
+                 var origin = event.origin || event.originalEvent.origin;
+                 if (origin === referrer) {   // Trusted Sites
+                   var data = event.data, action = data && data.action;
+                   if (action) {
+                     switch(action) {
+                       case "widget_location":
+                         widget_location = data.payload || '';
+                         break;
+                       case "get:subscription":
+                         registerServiceWorker();
+                         break;
+                       case "clear:subscription":
+                         unsubscribePush();
+                         break;
+                       default:
+                         break;
+                     }
+                   }
+                 }
+               },
+               onServiceWorkerMessage = function(event){
+                 switch(event.data) {
+                   case "get_widget_location":
+                     event.ports[0].postMessage(widget_location);
+                     break;
+                 }
+               },
+               addMessagingEvents = function() {
+                 if (window.addEventListener) {
+                     window.addEventListener("message", onMessage, false);
+                 } else {
+                   window.attachEvent("onmessage", onMessage);
+                 }
+                 if('serviceWorker' in navigator){
+                   // Handler for messages coming from the service worker
+                   navigator.serviceWorker.addEventListener('message', onServiceWorkerMessage);
+                 }
+               },
+               sendMessage = function(_subscription) {
+                 var data = {
+                       action: "push_user_meta",
+                       data: {
+                         permission: Notification.permission,
+                         subscription: _subscription
+                       }
+                     };
+                 if(window.opener) {
+                   window.opener.postMessage(JSON.parse(JSON.stringify(data)), referrer);
+                   window.close();
+                 } else {
+                   top.postMessage(JSON.parse(JSON.stringify(data)), referrer);
+                 }
+               },
+               registerServiceWorker = function(askPermission, onlyRegister) {
+                 if ('serviceWorker' in navigator) {
+                   navigator.serviceWorker.register(serviceWorkerUrl).then(function(reg) {
+                     // registration worked
+                     if(!onlyRegister) {
+                       subscribePush(askPermission);
+                     }
+                   }).catch(function(error) {
+                     // failed to register service worker
+                     sendMessage();
+                   });
+                 }
+               },
+               subscribePush = function(askPermission) {
+                 if (Notification.permission !== 'granted' && !askPermission) {
+                   sendMessage();
+                   return;
+                 }
+                 if ('serviceWorker' in navigator) {
+                   navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
+                     serviceWorkerRegistration.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription){
+                       sendMessage(subscription);
+                     }).catch(function(e) {
+                       console.log('error: serviceworker subscription failed');
+                       sendMessage();
+                     });
+                   });
+                 }
+               },
+               unsubscribePush = function() {
+                 if ('serviceWorker' in navigator) {
+                   navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
+                     // To unsubscribe from push messaging, you need get the
+                     // subscription object, which you can call unsubscribe() on.
+                     serviceWorkerRegistration.pushManager.getSubscription().then(
+                       function(pushSubscription) {
+                         // Check we have a subscription to unsubscribe
+                         if (!pushSubscription) {
+                           // No subscription object, so set the state
+                           // to allow the user to subscribe to push
+                           sendMessage();
+                           return;
+                         }
+                         // We have a subscription, so call unsubscribe on it
+                         pushSubscription.unsubscribe().then(function(successful) {
+                           //Unsubscribe successful
+                           sendMessage();
+                         }).catch(function(e) {
+                           // We failed to unsubscribe, this can lead to
+                           // an unusual state, so may be best to remove
+                           // the users data from your data store and
+                           // inform the user that you have done so
+                           sendMessage();
+                         });
+                       }
+                     ).catch(function(e) {
+                       sendMessage();
+                     });
+                   });
+                 }
+               },
+               init = function() {
+                 initParams();
+                 updateUI();
+                 if(window.opener) {
+                   switch(action) {
+                     case "ask:permission":
+                       registerServiceWorker(true);
+                       break;
+                     case "get:subscription":
+                       registerServiceWorker();
+                       break;
+                     default:
+                       break;
+                   }
+                 } else {
+                   // send push_frame_loaded event to parent window
+                   addMessagingEvents();
+                   registerServiceWorker(false, true);
+                   top.postMessage(JSON.parse(JSON.stringify({'action': 'push_frame_loaded'})), referrer);
+                 }
+               };
+           init();
+         })();
+      </script>
+   </body>
+</html>
+ñÆÓŠŸ      ]PÕÖ]PÕÖ@¯V¹]Yç°   M    :https://platzi.webpush.freshchat.com/index.html?ref=aHR0cHM6Ly9wbGF0emkuY29t necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2.0 200 OK
+content-type: text/html
+content-length: 10613
+last-modified: Thu, 08 Feb 2018 07:54:45 GMT
+accept-ranges: bytes
+server: AmazonS3
+date: Mon, 12 Aug 2019 00:05:06 GMT
+etag: "20ed016acc955aaef0b3db8ead8c12a0"
+x-cache: RefreshHit from cloudfront
+via: 1.1 346c45b7e1d17d686a3c852c4bff12e1.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAH50-C2
+x-amz-cf-id: mlJTI6zkOJVJuynvhjd_TxRrwuC8Zvdcjzk3a-tc-Ua0S9Qe15z-XA==
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/html
+content-length: 10613
+last-modified: Thu, 08 Feb 2018 07:54:45 GMT
+accept-ranges: bytes
+server: AmazonS3
+date: Mon, 12 Aug 2019 00:05:06 GMT
+etag: "20ed016acc955aaef0b3db8ead8c12a0"
+x-cache: RefreshHit from cloudfront
+via: 1.1 346c45b7e1d17d686a3c852c4bff12e1.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAH50-C2
+x-amz-cf-id: mlJTI6zkOJVJuynvhjd_TxRrwuC8Zvdcjzk3a-tc-Ua0S9Qe15z-XA==
+X-Firefox-Spdy: h2
+ ctid 1 eTLD1Access 1;0;2053414012, uncompressed-len 0 net-response-time-onstart 326 net-response-time-onstop 332 predictor::resource-count 1 predictor::https://platzi.webpush.freshchat.com/fc_logo.png 1,2,1565578710,12289   )u

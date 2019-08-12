@@ -1,6 +1,7 @@
 baseURL = "https://example.github.io/"
 title = "My Blog Site"
 theme = "khata"
+publishDir = "docs"
 languageCode = "en-us"
 copyright = "2019. First Last"
 pluralizelisttitles = false

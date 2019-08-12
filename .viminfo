@@ -1,0 +1,279 @@
+# Vim 8.0 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Viminfo version
+|1,4
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:wq
+|2,0,1565581197,,"wq"
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Debug Line (de lo más nuevo a lo más antiguo):
+
+# Registros:
+
+# Marcas en el archivo:
+'0  4  18  ~/example/config.toml
+|4,48,4,18,1565581197,"~/example/config.toml"
+'1  10  2  ~/example/content/post/hola-mundo.md
+|4,49,10,2,1565578914,"~/example/content/post/hola-mundo.md"
+'2  5  18  ~/prueba3/config.toml
+|4,50,5,18,1565566808,"~/prueba3/config.toml"
+'3  1  12  ~/prueba3/config.toml
+|4,51,1,12,1565565707,"~/prueba3/config.toml"
+'4  1  12  ~/prueba3/config.toml
+|4,52,1,12,1565565707,"~/prueba3/config.toml"
+'5  7  51  ~/prueba3/config.toml
+|4,53,7,51,1565565562,"~/prueba3/config.toml"
+'6  7  51  ~/prueba3/config.toml
+|4,54,7,51,1565565562,"~/prueba3/config.toml"
+'7  6  51  ~/prueba3/config.toml
+|4,55,6,51,1565565562,"~/prueba3/config.toml"
+'8  6  51  ~/prueba3/config.toml
+|4,56,6,51,1565565562,"~/prueba3/config.toml"
+'9  11  0  ~/prueba3/content/post/primerpost.md
+|4,57,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+
+# Lista de saltos (el más reciente va primero):
+-'  4  18  ~/example/config.toml
+|4,39,4,18,1565581197,"~/example/config.toml"
+-'  1  0  ~/example/config.toml
+|4,39,1,0,1565581143,"~/example/config.toml"
+-'  10  2  ~/example/content/post/hola-mundo.md
+|4,39,10,2,1565578914,"~/example/content/post/hola-mundo.md"
+-'  10  2  ~/example/content/post/hola-mundo.md
+|4,39,10,2,1565578914,"~/example/content/post/hola-mundo.md"
+-'  1  0  ~/example/content/post/hola-mundo.md
+|4,39,1,0,1565578847,"~/example/content/post/hola-mundo.md"
+-'  1  0  ~/example/content/post/hola-mundo.md
+|4,39,1,0,1565578847,"~/example/content/post/hola-mundo.md"
+-'  5  18  ~/prueba3/config.toml
+|4,39,5,18,1565566808,"~/prueba3/config.toml"
+-'  5  18  ~/prueba3/config.toml
+|4,39,5,18,1565566808,"~/prueba3/config.toml"
+-'  5  18  ~/prueba3/config.toml
+|4,39,5,18,1565566808,"~/prueba3/config.toml"
+-'  5  18  ~/prueba3/config.toml
+|4,39,5,18,1565566808,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565566766,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565566766,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565566766,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565566766,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565565707,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565565707,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565565707,"~/prueba3/config.toml"
+-'  1  12  ~/prueba3/config.toml
+|4,39,1,12,1565565707,"~/prueba3/config.toml"
+-'  7  51  ~/prueba3/config.toml
+|4,39,7,51,1565565647,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565647,"~/prueba3/config.toml"
+-'  7  51  ~/prueba3/config.toml
+|4,39,7,51,1565565647,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565647,"~/prueba3/config.toml"
+-'  7  51  ~/prueba3/config.toml
+|4,39,7,51,1565565647,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565647,"~/prueba3/config.toml"
+-'  7  51  ~/prueba3/config.toml
+|4,39,7,51,1565565647,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565647,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565562,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565562,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565562,"~/prueba3/config.toml"
+-'  6  51  ~/prueba3/config.toml
+|4,39,6,51,1565565562,"~/prueba3/config.toml"
+-'  1  0  ~/prueba3/config.toml
+|4,39,1,0,1565565242,"~/prueba3/config.toml"
+-'  1  0  ~/prueba3/config.toml
+|4,39,1,0,1565565242,"~/prueba3/config.toml"
+-'  1  0  ~/prueba3/config.toml
+|4,39,1,0,1565565242,"~/prueba3/config.toml"
+-'  1  0  ~/prueba3/config.toml
+|4,39,1,0,1565565242,"~/prueba3/config.toml"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  11  0  ~/prueba3/content/post/primerpost.md
+|4,39,11,0,1565564462,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+-'  1  0  ~/prueba3/content/post/primerpost.md
+|4,39,1,0,1565564364,"~/prueba3/content/post/primerpost.md"
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/example/config.toml
+	*	1565581193	0
+	"	4	18
+	^	4	19
+	.	4	18
+	+	4	18
+
+> ~/example/content/post/hola-mundo.md
+	*	1565578908	0
+	"	10	2
+	^	10	3
+	.	10	2
+	+	4	11
+	+	10	2
+
+> ~/prueba3/config.toml
+	*	1565566806	0
+	"	5	18
+	^	5	19
+	.	5	18
+	+	6	19
+	+	3	45
+	+	7	15
+	+	5	18
+
+> ~/prueba3/content/post/primerpost.md
+	*	1565564456	0
+	"	11	0
+	^	11	0
+	.	10	0
+	+	10	0
