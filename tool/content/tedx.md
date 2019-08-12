@@ -1,0 +1,5 @@
+---
+weight: 3
+title: "TEDxADMU | VIDEO 1: INSTALACIÒN"
+description: "SE MUESTRAN EJEMPLOS CLARO DE COMO HACER LA INSTALACION DE POSTRE"
+nav_heading: "TEDxADMU Case Study"
